@@ -2,10 +2,32 @@
   "name": "react-text-on-svg",
   "version": "1.0.0",
   "description": "React component that draws an svg box with text on it.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/pnicolli/react-text-on-svg",
   "bugs": "https://github.com/pnicolli/react-text-on-svg/issues",
   "author": "Piero Nicolli (github.com/pnicolli)",
   "homepage": "https://github.com/pnicolli/react-text-on-svg#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.5.4",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "peerDependencies": {
+    "prop-types": "*",
+    "react": "*",
+    "react-dom": "*"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "svg-text-wrap": "^0.0.1"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  }
 }
