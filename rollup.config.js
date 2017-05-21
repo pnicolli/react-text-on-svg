@@ -14,8 +14,7 @@ export default {
       include: 'node_modules/**',
       namedExports: {
         'prop-types': [ 'string' ]
-      },
-      sourceMap: false
+      }
     }),
     babel({
       exclude: 'node_modules/**'
