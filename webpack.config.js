@@ -6,8 +6,8 @@ module.exports = {
   output: {
     filename: 'react-text-to-svg.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'textOnSvg',
-    libraryTarget: 'umd'
+    library: 'TextOnSvg',
+    libraryTarget: 'commonjs2'
   },
   module: {
     rules: [
