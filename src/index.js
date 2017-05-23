@@ -9,6 +9,7 @@ const TextOnSvg = ({
   height = 448,
   textWidth = 0.8,
   fontSize = 48,
+  fontWeight = 500,
   fontFamily = 'OpenSans-Semibold, Open Sans, Helvetica, Arial, sans-serif',
   backgroundColor = '#417505',
   color = '#FFFFFF',
@@ -46,8 +47,8 @@ const TextOnSvg = ({
         <rect fill={backgroundColor} x="0" y="0" width={width} height={height}></rect>
         <text
           fontFamily={fontFamily}
-          fontSize="48"
-          fontWeight="500"
+          fontSize={fontSize}
+          fontWeight={fontWeight}
           fill={color}
           y={(height / 2) - 10 - ((fontSize / 2 + 1)  * linesNumber)}
           textAnchor="middle"
@@ -66,6 +67,7 @@ TextOnSvg.propTypes = {
   height: number,
   textWidth: number,
   fontSize: number,
+  fontWeight: number,
   fontFamily: string,
   backgroundColor: string,
   color: string,
