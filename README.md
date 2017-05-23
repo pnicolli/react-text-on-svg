@@ -38,16 +38,16 @@ class App extends React.Component {
   render() {
     return (
       <TextOnSvg
-        className="text-on-svg",
-        text="I am inside the rectangle, and wrapping!",
+        className="text-on-svg"
+        text="I am inside the rectangle, and wrapping!"
         width={512}
-        height={448},
-        textWidth={0.8},
-        fontSize={48},
-        fontWeight={500},
-        fontFamily="OpenSans-Semibold, Open Sans, Helvetica, Arial, sans-serif",
-        backgroundColor="#417505",
-        color="#FFFFFF",
+        height={448}
+        textWidth={0.8}
+        fontSize={48}
+        fontWeight={500}
+        fontFamily="OpenSans-Semibold, Open Sans, Helvetica, Arial, sans-serif"
+        backgroundColor="#417505"
+        color="#FFFFFF"
       />
     );
   }
