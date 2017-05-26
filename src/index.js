@@ -10,7 +10,7 @@ const TextOnSvg = ({
   textWidth = 0.8,
   fontSize = 48,
   fontWeight = 500,
-  fontFamily = 'OpenSans-Semibold, Open Sans, Helvetica, Arial, sans-serif',
+  fontFamily = '',
   backgroundColor = '#417505',
   color = '#FFFFFF',
 }) => {
@@ -46,7 +46,7 @@ const TextOnSvg = ({
       <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <rect fill={backgroundColor} x="0" y="0" width={width} height={height}></rect>
         <text
-          fontFamily={fontFamily}
+          {...fontFamily !== '' ? {fontFamily: fontFamily} : {}}
           fontSize={fontSize}
           fontWeight={fontWeight}
           fill={color}
